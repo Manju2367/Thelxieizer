@@ -48,6 +48,14 @@ div#container div#inner-container {
 }
 div#container div#inner-container img#image-thelxie {
   vertical-align: top;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+       user-select: none;
+  -webkit-user-drag: none;
+}
+div#container div#inner-container p#thelxie-says {
+  font-size: 16px;
+  margin-left: -12px;
 }
 div#container div#inner-container div.inner-containers:not(:first-of-type) {
   margin-top: 20px;

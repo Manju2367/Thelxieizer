@@ -58,6 +58,14 @@ div#container {
 
         img#image-thelxie {
             vertical-align: top;
+            -webkit-user-select: none;
+            user-select: none;
+            -webkit-user-drag: none;
+        }
+
+        p#thelxie-says {
+            font-size: 16px;
+            margin-left: -12px;
         }
 
         div.inner-containers:not(:first-of-type) {
