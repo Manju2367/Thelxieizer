@@ -116,6 +116,7 @@ window.addEventListener("DOMContentLoaded", () => {
     const buttonDecryption = document.getElementById("button-decryption") as HTMLButtonElement
     const textareaOutput = document.getElementById("textarea-output") as HTMLTextAreaElement
     const buttonCopy = document.getElementById("button-copy") as HTMLButtonElement
+    const aGoogle = document.getElementById("link-google") as HTMLAnchorElement
 
 
 
@@ -144,6 +145,7 @@ window.addEventListener("DOMContentLoaded", () => {
             textareaInput.classList.remove("warn")
 
             textareaOutput.value = decryption(input)
+            aGoogle.href = `https://translate.google.co.jp/?hl=ja&sl=fr&tl=ja&op=translate&text=${ textareaOutput.value }`
         } else {
             textareaInput.classList.add("warn")
         }
