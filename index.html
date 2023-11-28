@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <title>Thelxieizer</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
+
+</head>
+<body>
+
+    <div id="container">
+
+        <div id="inner-container">
+            <h1>Thelxiezer</h1>
+
+            <div id="form-container" class="inner-containers">
+                <div class="header">
+                    <h2>input</h2>
+                    <p>使用可能な文字 -> 暗号化：半角英字 復号化：半角ハイフン-,半角ピリオド.</p>
+                </div>
+
+                <form>
+                    <textarea name="textarea-input" id="textarea-input" placeholder="input here"></textarea>
+                    <div class="button-container">
+                        <button id="button-encryption" role="button" type="button">暗号化</button>
+                        <button id="button-decryption" role="button" type="button">復号化</button>
+                    </div>
+                </form>
+            </div>
+
+            <div id="result-container" class="inner-containers">
+                <div class="header">
+                    <h2>output</h2>
+                </div>
+
+                <textarea id="textarea-output" placeholder="output here" disabled></textarea>
+                <div class="button-container">
+                    <button id="button-copy" role="button" type="button">コピー</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>

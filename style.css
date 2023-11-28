@@ -1,0 +1,64 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+}
+
+h1, h2 {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+button {
+  cursor: pointer;
+}
+
+.header h2, .header p {
+  display: inline-block;
+}
+.header p {
+  font-size: 12px;
+  color: #6e6e6e;
+  margin-left: 10px;
+}
+
+div#container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #000;
+}
+div#container div#inner-container {
+  width: 70%;
+  min-width: 720px;
+  padding: 10px;
+  background-color: #fff;
+}
+div#container div#inner-container div.inner-containers:not(:first-of-type) {
+  margin-top: 20px;
+}
+div#container div#inner-container div#form-container textarea#textarea-input {
+  width: 100%;
+  height: 100px;
+  font-size: 16px;
+}
+div#container div#inner-container div#form-container textarea#textarea-input.warn {
+  background-color: #ff9999;
+}
+div#container div#inner-container div#result-container textarea#textarea-output {
+  width: 100%;
+  height: 100px;
+  font-size: 16px;
+}/*# sourceMappingURL=style.css.map */
