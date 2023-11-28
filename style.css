@@ -24,7 +24,7 @@ button {
   cursor: pointer;
 }
 
-.header h2, .header p {
+.header h1, .header h2, .header p {
   display: inline-block;
 }
 .header p {
@@ -45,6 +45,9 @@ div#container div#inner-container {
   min-width: 720px;
   padding: 10px;
   background-color: #fff;
+}
+div#container div#inner-container img#image-thelxie {
+  vertical-align: top;
 }
 div#container div#inner-container div.inner-containers:not(:first-of-type) {
   margin-top: 20px;
