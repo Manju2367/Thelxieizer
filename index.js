@@ -100,6 +100,7 @@ window.addEventListener("DOMContentLoaded", () => {
     const buttonDecryption = document.getElementById("button-decryption");
     const textareaOutput = document.getElementById("textarea-output");
     const buttonCopy = document.getElementById("button-copy");
+    const aGoogle = document.getElementById("link-google");
     // 暗号化
     buttonEncryption.onclick = () => {
         const input = textareaInput.value;
@@ -121,6 +122,7 @@ window.addEventListener("DOMContentLoaded", () => {
             console.log("OK");
             textareaInput.classList.remove("warn");
             textareaOutput.value = decryption(input);
+            aGoogle.href = `https://translate.google.co.jp/?hl=ja&sl=fr&tl=ja&op=translate&text=${textareaOutput.value}`;
         }
         else {
             textareaInput.classList.add("warn");
